@@ -53,4 +53,14 @@ function writeYourGenres() {
     }
 }
 writeYourGenres();
+const optio = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        dg: 'red'
+    }
+};
+console.log(Object.keys(optio).length);
 
