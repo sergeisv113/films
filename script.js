@@ -51,7 +51,8 @@ function writeYourGenres() {
         let genre = prompt(`Ваш любим[ый жанр под номером ${i}`);
          personalMovieDB.genres[i - 1] = genre;
     }
-}
+};
+//
 writeYourGenres();
 const optio = {
     name: 'test',
@@ -63,4 +64,13 @@ const optio = {
     }
 };
 console.log(Object.keys(optio).length);
-
+//
+const arr = [2, 13, 26, 8, 10];
+arr.sort();
+//[10, 13, 2, 26, 8]
+arr.sort(compareNum);
+//[2, 8, 10, 13, 26]
+function compareNum(a, b) {
+    return a - b
+}
+//
